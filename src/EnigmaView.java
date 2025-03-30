@@ -1,11 +1,4 @@
-/*
- * File: EnigmaView.java
- * ---------------------
- * This module implements the class EnigmaView, which manages the
- * graphics for the Enigma simulator.
- */
-
-package edu.willamette.cs1.enigma;
+package src;
 
 import java.awt.BasicStroke;
 import java.awt.BorderLayout;
@@ -198,12 +191,12 @@ class EnigmaCanvas extends JComponent implements MouseListener {
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        /* Empty */
+       
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        /* Empty */
+   
     }
 
     @Override

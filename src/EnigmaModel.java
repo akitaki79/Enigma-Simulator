@@ -1,13 +1,7 @@
-/*
- * File: EnigmaModel.java
- * ----------------------
- * This class defines the starter version of the EnigmaModel class,
- * which doesn't implement any of the methods.
- */
 
-package edu.willamette.cs1.enigma;
+package src;
 
-import static edu.willamette.cs1.enigma.EnigmaConstants.*;
+import static src.EnigmaConstants.*;
 
 import java.util.ArrayList;
 import java.util.Dictionary;
@@ -26,16 +20,12 @@ public class EnigmaModel {
 /**
  * Adds a view to this model.
  *
- * @param view The view being added
+ * @param view 
  */
 
     public void addView(EnigmaView view) {
         views.add(view);
     }
-
-/**
- * Sends an update request to all the views.
- */
 
     public void update() {
         for (EnigmaView view : views) {
@@ -46,7 +36,7 @@ public class EnigmaModel {
 /**
  * Returns true if the specified letter key is pressed.
  *
- * @param letter The letter key being tested as a one-character string.
+ * @param letter 
  */
 
     public boolean isKeyDown(String letter) {
@@ -56,7 +46,7 @@ public class EnigmaModel {
 /**
  * Returns true if the specified lamp is lit.
  *
- * @param letter The lamp being tested as a one-character string.
+ * @param letter
  */
 
     public boolean isLampOn(String letter) {
@@ -75,9 +65,9 @@ public class EnigmaModel {
     }
 
 /**
- * Called automatically by the view when the specified key is pressed.
+ * Called by the view when the specified key is pressed.
  *
- * @param key The key the user pressed as a one-character string
+ * @param key 
  */
 
     public void keyPressed(String key) {
@@ -97,9 +87,9 @@ public class EnigmaModel {
     
 
 /**
- * Called automatically by the view when the specified key is released.
+ * Called by the view when the specified key is released.
  *
- * @param key The key the user released as a one-character string
+ * @param key 
  */
 
     public void keyReleased(String key) {
@@ -130,7 +120,7 @@ public class EnigmaModel {
  * Called automatically by the view when the rotor at the specified
  * index (0-2) is clicked.
  *
- * @param index The index of the rotor that was clicked
+ * @param index 
  */
 
     public void rotorClicked(int index) {
@@ -139,8 +129,6 @@ public class EnigmaModel {
     }
 
     
-/* Main program */
-
     public static void main(String[] args) {
         EnigmaModel model = new EnigmaModel();
         EnigmaView view = new EnigmaView(model);

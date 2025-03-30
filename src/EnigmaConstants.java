@@ -1,19 +1,8 @@
-/*
- * File: EnigmaConstants.java
- * --------------------------
- * This module contains the constants used in the Enigma simulator.  The
- * easiest way to incorporate them into your program is to use the line
- *
- *     import static edu.willamette.cs1.enigma.EnigmaConstants.*;
- *
- * which imports all the top-level definitions.
- */
 
-package edu.willamette.cs1.enigma;
+package src;
 
 /*
- * Notes on the Enigma constants
- * -----------------------------
+ * 
  * The early German Enigma machines include three rotors, which advance
  * at different speeds.  The rotor on the right is the "fast" rotor,
  * which advances on every keystroke.  The rotor in the middle is the
@@ -41,8 +30,6 @@ package edu.willamette.cs1.enigma;
  *    | | | | | | | | | | | | | | | | | | | | | | | | | |
  *    I X U H F E Z D A O M T K Q J W N S R L C Y P B V G
  *
- * Note that the reflector is symmetric.  If A is transformed to I,
- * then I is transformed to A.
  */
 
 public class EnigmaConstants {

@@ -1,5 +1,5 @@
-package edu.willamette.cs1.enigma;
-import static edu.willamette.cs1.enigma.EnigmaConstants.*;
+package src;
+import static src.EnigmaConstants.*;
 
 
 public class rotor {

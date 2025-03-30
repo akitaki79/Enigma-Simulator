@@ -1,4 +1,4 @@
-#Enigma Simulator
+## Enigma Simulator
 
 This project simulates the enigma encryption machine used by Germans during WW2. 
 
